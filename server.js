@@ -31,6 +31,7 @@ app.get('/', (_, res) => {
 })
 
 app.use('/api/user', userRoutes);
+app.use("/api/tasks", require("./routes/task.routes"));
 
 require('./config/db')
 
